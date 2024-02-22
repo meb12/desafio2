@@ -1,31 +1,46 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
 }
 
 a {
   text-decoration: none;
+  cursor: pointer;
 }
-
+body {
+  background-color: #eeeeee;
+}
 .header {
   background-color: black;
   padding-inline: 16px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.a-logo {
+  margin-top: 10px;
+  padding: 3px;
+}
+.tamanho-logo {
+  width: 60px;
+  height: 42px;
+  margin: 8px;
+  padding: 4px;
+}
+.tamanho-icones {
+  width: 20px;
+  height: 25px;
 }
 
 .nav {
   max-width: 1280px;
   height: 70px;
-  margin-inline: auto;
-
   display: flex;
   justify-content: space-around;
   align-items: center;
   height: 8vh;
-}
-
-.tamanho-logo {
-  width: 60px;
-  height: 42px;
+  margin: 0 auto;
 }
 
 .hamburguer {
@@ -51,12 +66,16 @@ a {
     overflow-x: hidden;
   }
 
+  .nav {
+    margin-right: 16px;
+  }
+
   .nav-list {
     position: absolute;
-    top: 8vh;
+    top: 74px;
     right: 0;
     width: 50vw;
-    height: 92vh;
+    height: 90vh;
     background: black;
     flex-direction: column;
     align-items: center;
@@ -90,18 +109,186 @@ a {
   align-items: center;
 }
 
-.nav-a {
-  font-size: 14px;
+.nav-a,
+.principal-link {
+  font-size: 20px;
   color: white;
   padding-block: 16px;
   transition: all 0.5s;
-  cursor: pointer;
 }
 
 .nav-a:hover {
   font-weight: bold;
   font-size: 16px;
 }
-.button-nav:hover {
+.button-nav:hover,
+.principal-link:hover {
   color: blue;
+}
+.div-barra-pesquisa {
+  background: none;
+  height: 35px;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.barra-pesquisa {
+  background: none;
+  border: 0;
+  outline: 0;
+  font-size: 16px;
+  width: 0;
+  padding: 0;
+  transition: 0.4s;
+}
+.a-pesquisar {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div-barra-pesquisa:hover > .barra-pesquisa {
+  width: 320px;
+}
+.div-barra-pesquisa:hover {
+  background-color: white;
+  padding-left: 20px;
+}
+.principal {
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+.div-principal {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.tamanho-logo-gr {
+  width: 240px;
+  height: 240px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.div-principal-links {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.principal-link {
+  font-size: 16px;
+}
+.cor-icon {
+  color: blue;
+  height: 30px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.cor-icon:hover {
+  color: white;
+}
+.div-principal-links-redes {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  margin-right: 20px;
+}
+.historia {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.historia-div {
+  margin: 90px;
+}
+.img-computador {
+  width: 350px;
+}
+h1 {
+  text-align: center;
+}
+.cor_azul {
+  color: #3077ab;
+}
+.cor_laranja {
+  color: #fe7a00;
+  margin-left: -10px;
+}
+.div-autor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+.autor {
+  border-radius: 40px;
+}
+.div-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.card {
+  background-color: white;
+  width: 300px;
+  height: 460px;
+  border-radius: 12px;
+  box-shadow: 4px 4px 12px #aaaaaa;
+  display: flex;
+  justify-content: center;
+  gap: 4px;
+}
+.card-img {
+  width: auto;
+  height: auto;
+}
+.card-leiaMais {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.card-leiaMais-a {
+  text-align: center;
+  border: solid 1px;
+  width: 220px;
+  padding: 10px;
+  color: blue;
+  font-weight: bold;
+}
+
+.card-leiaMais-a:hover {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 50px;
+}
+
+.footer-a {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  color: white;
+  font-size: 18px;
+}
+.footer-a:hover {
+  color: blueviolet;
 }
